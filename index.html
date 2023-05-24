@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome to gynecologist</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body class="overflow-x-hidden">
+      <!--NAVIGATION BAR-->
+      <div class=" h-screen w-screen bg-no-repeat bg-center bg-cover shadow-2xl " style="background-image: url('https://images.unsplash.com/photo-1536607961765-592e80bcc19e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');">
+       
+       <nav class="flex justify-between " >
+            <p class="text-5xl text-white py-20 pl-28  font-sans font-medium shad wwww">tropozo</p>
+           <ul class=" text-white flex pt-24 text-xl justify-end pr-16 font-light hover:text-black fnt ">
+            <li class="mx-4 py-1 cursor-pointer hover:text-gray-500 font-medium ">home</li>
+           <a href="#trips" class="text-decoration-none text-white"> <li class="mx-4 py-1 cursor-pointer hover:text-gray-500 font-medium ">popular places</li></a>
+            <li class="mx-4 py-1 cursor-pointer hover:text-gray-500 font-medium ">Travel outside</li>
+            <li class="mx-4 py-1 cursor-pointer hover:text-gray-500 font-medium ">blog</li>
+            <li class="mx-4 cursor-pointer hover:text-gray-500"> <button class="text-black  border-black border-3 hover:border-3 rounded-2xl  hover:border-gray-400  font-medium pl-1  pr-1 active:bg-black " onclick="showmodel()">sign in</button></li>           
+           </ul>
+            
+       </nav>
+ <div class="flex">
+       <div class="container">
+       <p class=" text-white font-sans flex pt-24 pl-28  www">plan your next trip <br> with us</p> 
+         <div class="search-bar ml-28">
+            <form action="">
+                  <div class="loc-ip">
+                     <label class="sb" for="">Location</label>
+                     <input type="text" class="ww" placeholder="Where are you going?"/>
+                  </div>
+                  <div>
+                    <label class="sb" for="">Check in</label>
+                    <input type="text" class="ww" placeholder="Date"/>
+                 </div>
+                 <div>
+                  <label class="sb" for="">Check out</label>
+                  <input type="text" class="ww" placeholder="date"/>
+               </div>
+               <div>
+                <label class="sb" for="">person</label>
+                <input type="text" class="ww" placeholder="add persons">
+             </div>
+             <button type="submit" class="hover:bg-gray-500"><img src="images/search.png" alt=""></button>
+
+
+            </form>
+
+         </div>
+       <div class="pl-28  ">
+       <a href="#trips"> <button class=" text-white mt-2  border-white text-2xl border-3 hover:border-3 rounded-2xl  hover:border-black hover:text-black font-medium pl-1 py-1 pr-1 active:bg-black" onclick="trips">Explor Now</button></a>    
+       </div>
+      </div>
+      <!-- <p class="text-xl text-white font-sans flex pl-40">go beyond the world</p> -->
+<!-- sign in box -->
+     <div class=" signin ">
+      <div class="shadow-lg rounded-md w-80 h-80 mr-24 bg-white">
+        <div class="ml-14 ">
+          <button class="ml-56  focus:bg-gray-700 rounded-lg px-1 py-1 hover:bg-gray-300" onclick="hidemoder()"><i class="fa-solid fa-xmark fa-xl"></i></button>
+        </div>
+         
+         <h1 class="text-3xl block text-center font-semibold "> <i class="fa-solid fa-user"></i> Login</h1>
+           <div>
+              <label for="username" class="text-xl block  mb-1 mt-3 ml-4 ">Username</label>
+              <input type="text" id="username" class="  w-72 px-1  pt-1 ml-3 rounded-md text-xl border-gray-300 border-2 focus:ring-0 focus:border-gray-700" placeholder="Enter username...">
+              
+
+           </div>
+           <div>
+            <label for="password" class="text-xl block  mb-1 mt-4 ml-4">Password</label>
+            <input type="password" id="password" class="mb-2  w-72 px-1  ml-3 rounded-md text-xl border-gray-300 border-2 focus:ring-0 focus:border-gray-700" placeholder="Enter password...">
+
+         </div>
+         
+         <div class="flex mx-2 font-semibold justify-between">
+            <div>
+               <input class="ml-3" type="checkbox" name="" id="">
+               <label for="" class="" >Remember me </label>
+            </div>
+            <div>
+              <a href="#" class="mr-4  text-decoration-none">Forgot password?</a>
+            </div>
+        </div>
+
+        <div class="my-1">
+          <button class="border-3 border-black  w-72 px-1  ml-3 rounded-md text-xl mb-4 mt-1 border-2 text-white focus:ring-0 focus:border-gray-700 bg-gray-700 hover:bg-black focus:bg-gray-600" onclick="hidemoder()">Submit</button>
+
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</div> 
+<!-- farvani jagyao -->
+   
+<div class="container">
+     <h2 class="sub-title">Exclusive</h2>
+     <div class="exclusives">
+          <div>
+            <img src="images/image-2.png" alt="">
+            <span>
+              <h3 class="name">Switzerland</h3>
+              <p class="price">Starts @ $250</p>
+            </span>            
+          </div>
+          <div>
+            <img src="images/image-3.png" alt="">
+            <span>
+              <h3 class="name">Australia</h3>
+              <p class="price">Starts @ $250</p>
+            </span>   
+          </div>
+          <div>
+            <img src="images/image-1.png" alt="">
+            <span>
+              <h3 class="name">London</h3>
+              <p class="price">Starts @ $250</p>
+            </span>   
+          </div>
+          <div>
+            <img src="images/image-4.png" alt="">
+            <span>
+              <h3 class="name">France</h3>
+              <p class="price">Starts @ $250</p>
+            </span>   
+          </div>
+          <div>
+            <img src="images/image-5.png" alt="">
+            <span>
+              <h3 class="name">Amsterdam</h3>
+              <p class="price">Starts @ $250</p>
+            </span>   
+          </div>
+     </div>
+
+     <div class="exclusives mt-8">
+      <div>
+        <img src="images/image-10.png" alt="">
+        <span>
+          <h3 class="name">Shanghai</h3>
+          <p class="price">Starts @ $250</p>
+        </span>            
+      </div>
+      <div>
+        <img src="images/image-9.png" alt="">
+        <span>
+          <h3 class="name">San Fransisco</h3>
+          <p class="price">Starts @ $250</p>
+        </span>   
+      </div>
+      <div>
+        <img src="images/image-8.png" alt="">
+        <span>
+          <h3 class="name">Chicago</h3>
+          <p class="price">Starts @ $250</p>
+        </span>   
+      </div>
+      <div>
+        <img src="images/image-7.png" alt="">
+        <span>
+          <h3 class="name">New York</h3>
+          <p class="price">Starts @ $250</p>
+        </span>   
+      </div>
+      <div>
+        <img src="images/image-6.png" alt="">
+        <span class="spin">
+          <h3 class="name">Netherlands</h3>
+          <p class="price">Starts @ $250</p>
+        </span>   
+      </div>
+      
+
+
+ </div>
+<!-- -----popular places-------- -->
+ <h2 class="sub-title">Popular places</h2>
+  <div class="popular">
+       <div class="popu ">
+        <img src="images/new-york.png" class="p1 hover:scale-105 hover:brightness-90" alt="">
+        <h3 class="pop">New York</h3>
+       </div >
+       <div class="popu">
+        <img src="images/dubai.png" class="p1 hover:scale-105 hover:brightness-90" alt="">
+        <h3 class="pop">Dubai</h3>
+       </div>
+       <div class="popu">
+        <img src="images/paris.png" class="p1 hover:scale-105 hover:brightness-90" alt="">
+        <h3 class="pop">Paris</h3>
+       </div>
+       <div class="popu">
+        <img src="images/new-delhi.png" class="p1 hover:scale-105 hover:brightness-90" alt="">
+        <h3 class="pop">New Delhi</h3>
+       </div>
+
+
+ </div>
+
+ <div class="cta">
+     <h3 class="money">Share <br> Your extra space with us </h3>
+     <p class="ctapara">now make money by listing yor hotel on our website</p>
+     <button class="text-white  border-white text-3xl border-3 hover:border-3 rounded-2xl  hover:border-black hover:text-black font-medium pl-1 py-1 mt-3 pr-1 active:bg-black">know more</button>
+
+ </div>
+ <!-- ---travel stories --- -->
+ <h2 class="sub-title">Travellers  stories</h2>
+<div class="flex ">
+  <!-- ---- -->
+  
+ <div id="carouselExampleCaptions" class="carousel slide story mr-14" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/dubai.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 class="pop1">International Tours</h5>
+        <p>what a great room at this price such a clean and big room</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/dubai.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 class="pop1">International Tours</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/dubai.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 class="pop1">International Tours</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+  
+</div>
+
+<!-- -- -->
+<div id="carouselExampleCaptions" class="carousel slide story ml-14 " data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/new-delhi.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 class="pop1">Domestic Tours</h5>
+        <p>what a great room at this price such a clean and big room</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/new-delhi.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 class="pop1">Domestic Tours</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/dubai.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 class="pop1">Domestic Tours</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+
+<h2 class="sub-titlebl">Our best blog?</h2>
+<h3 class="pop2 pb-16 pt-2">An  insight  to  the  incredible  experience  in  the  world</h3>
+
+<div class="container flex popular">
+     <div class="mr-8">
+      <img src="https://images.pexels.com/photos/7693836/pexels-photo-7693836.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+     </div>
+     <div class="bli mr-3">
+      <h3 class="pop3 mb-2">Beautiful Morocco, let us travel!!<br></h3>    
+      <p class="pop4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati, culpa! Qui beatae eos, veritatis quas rerum quae nulla explicabo sequi nihil magni exercitationem!</p>
+      <button class="blogread mt-3">Read More <i class="fa-solid fa-arrow-right fa-lg"></i></button>
+     </div>
+
+     <div class="mr-8">
+      <img src="https://images.pexels.com/photos/7693836/pexels-photo-7693836.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+     </div>
+     <div class="bli mr-3">
+      <h3 class="pop3 mb-2">Beautiful Morocco, let us travel!!<br></h3>    
+      <p class="pop4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati, culpa! Qui beatae eos, veritatis quas rerum quae nulla explicabo sequi nihil magni exercitationem!</p>
+      <button class="blogread mt-3">Read More <i class="fa-solid fa-arrow-right fa-lg"></i></button>
+     </div>
+
+</div>
+<div class="container flex popular mt-14 mb-24">
+  <div class="mr-8">
+   <img src="https://images.pexels.com/photos/7693836/pexels-photo-7693836.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+  </div>
+  <div class="bli mr-3">
+   <h3 class="pop3 mb-2">Beautiful Morocco, let us travel!!<br></h3>    
+   <p class="pop4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati, culpa! Qui beatae eos, veritatis quas rerum quae nulla explicabo sequi nihil magni exercitationem!</p>
+   <button class="blogread mt-3">Read More <i class="fa-solid fa-arrow-right fa-lg"></i></button>
+  </div>
+
+  <div class="mr-8">
+   <img src="https://images.pexels.com/photos/7693836/pexels-photo-7693836.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+  </div>
+  <div class="bli mr-3">
+   <h3 class="pop3 mb-2">Beautiful Morocco, let us travel!!<br></h3>    
+   <p class="pop4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati, culpa! Qui beatae eos, veritatis quas rerum quae nulla explicabo sequi nihil magni exercitationem!</p>
+   <button class="blogread mt-3">Read More <i class="fa-solid fa-arrow-right fa-lg"></i></button>
+  </div>
+
+</div>
+
+
+
+
+
+
+</div>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- <div class="bg-white h-screen w-screen  mx-3" id="trips">
+    <h1 class="text-black text-7xl  mx-24 mt-20 trend ">Popular destinations</h1>
+      <div class="flex">
+      <div class="">
+
+        <img class="h-60 w-96 mx-10 my-20 shadow-2xl ml-20 rounded-3xl border-3 border-gray-500 hover:blur-sm  " src="https://images.pexels.com/photos/10620256/pexels-photo-10620256.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+        
+      </div>  
+     
+    <img class="h-60 w-96 mx-10 my-20 shadow-2xl rounded-3xl border-3 border-gray-500  hover:rounded-3xl " src="https://images.pexels.com/photos/1098460/pexels-photo-1098460.jpeg" alt="">
+     <img class="h-60 w-96  mx-10 my-20 shadow-2xl rounded-3xl border-3 border-gray-500  hover: " src="https://images.pexels.com/photos/5238342/pexels-photo-5238342.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+    <img class="h-60  w-96  mx-10 my-20 shadow-2xl rounded-3xl border-3 border-gray-500 mr-32  hover: " src="https://images.pexels.com/photos/2780309/pexels-photo-2780309.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+
+     </div>
+    
+</div>  -->
+
+<!-- packages -->
+<footer class=" w-screen fot">
+<div class="flex">
+   <div class="pr-10">
+    <p class="text-7xl text-white pt-24 pl-32  font-sans font-medium shad">tropozo.</p>
+    <p class="text-xl text-white py-2 pl-32  font-sans font-medium shad">Book yout trip in a minute,get full control <br> for much longer</p>
+   </div>
+
+   <div class="px-14">
+    <h3 class="pop5  pt-32 text-white pb-4 ">Companey</h3>
+    <span class="fotercl">
+        <p>About</p>
+        <p>Carrier</p>
+        <p>Mobile</p>
+    </span>
+
+   </div>
+   <div class="px-16">
+    <h3 class="pop5  pt-32 text-white pb-4">Contact</h3>
+    <span class="fotercl">
+        <p>Help/FAQ</p>
+        <p>Press</p>
+        <p>Affiliates</p>
+    </span>
+
+   </div>
+   <div class="px-16">
+    <h3 class="pop5  pt-32 text-white pb-4">More</h3>
+    <span class="fotercl">
+        <p>Airlinefees</p>
+        <p>Airline</p>
+        <p>Low Fare Tips</p>
+    </span>
+
+   </div>
+
+   <div class="px-16">
+    <div class="pt-36 px-2"><i class="fa-brands fa-facebook fa-2xl px-2"></i>  <i class="fa-brands fa-instagram fa-2xl px-2"></i>   <i class="fa-brands fa-twitter fa-2xl px-2"></i></div>
+
+
+   </div>
+ 
+
+
+
+
+
+</div>
+
+
+
+</footer>
+
+
+
+
+    <script>
+       function showmodel(){
+         document.querySelector('.signin').classList.add('submit');
+       }
+       function hidemoder(){
+        document.querySelector('.signin').classList.remove('submit')
+       }
+    </script>
+
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>
